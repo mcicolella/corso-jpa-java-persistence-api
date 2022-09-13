@@ -1,1 +1,3 @@
-# jpa-and-hibernate-examples
+# Corso di JPA Java Persistence API
+
+
