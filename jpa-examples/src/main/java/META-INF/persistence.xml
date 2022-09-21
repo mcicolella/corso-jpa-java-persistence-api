@@ -15,8 +15,7 @@
 			<property name="javax.persistence.jdbc.url"
 				value="jdbc:h2:mem:" />
 			<property name="javax.persistence.jdbc.user" value="user" />
-			<property name="javax.persistence.jdbc.password"
-				value="pwd" />
+			<property name="javax.persistence.jdbc.password" value="pwd" />
 
 			<!-- Schema configuration -->
 			<property
@@ -24,30 +23,29 @@
 				value="create" />
 		</properties>
 	</persistence-unit>
-    
-    <persistence-unit name="jpa-mysql" transaction-type="RESOURCE_LOCAL">
-        <description>
-            Persistence unit for the JPA tutorial of the Hibernate Getting Started Guide
-        </description>
-        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+
+	<persistence-unit name="jpa-mysql"
+		transaction-type="RESOURCE_LOCAL">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
 		<class>net.emmecilab.jpa_examples.entity.Person</class>
 
-        <properties>
-            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/test" />
-            <property name="javax.persistence.jdbc.user" value="root" />
-            <property name="javax.persistence.jdbc.password" value="mysqlroot" />
+		<properties>
+			<property name="javax.persistence.jdbc.driver"
+				value="com.mysql.jdbc.Driver" />
+			<property name="javax.persistence.jdbc.url"
+				value="jdbc:mysql://localhost:3306/test" />
+			<property name="javax.persistence.jdbc.user" value="root" />
+			<property name="javax.persistence.jdbc.password"
+				value="mysqlroot" />
 
-            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL57Dialect" />
-            <property name="hibernate.show_sql" value="true" />
-            
-            <!-- Schema configuration -->
+			<property name="hibernate.dialect"
+				value="org.hibernate.dialect.MySQL57Dialect" />
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="true" />
+			<!-- Schema configuration -->
 			<property
 				name="javax.persistence.schema-generation.database.action"
 				value="update" />
-        
-        </properties>
-
-    </persistence-unit>
-    
+		</properties>
+	</persistence-unit>
 </persistence>

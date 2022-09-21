@@ -11,20 +11,22 @@ public class App {
 
 		EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("jpa-mysql");
 		EntityManager entityManager = entityManagerFactory.createEntityManager();
+		try {
+			entityManager.getTransaction().begin();
 
-		entityManager.getTransaction().begin();
+			Person p1 = new Person();
+			p1.setFirstName("pinco");
+			p1.setLastName("pallino");
+			// p1.setId(1L);
+			entityManager.persist(p1);
 
-		Person p1 = new Person();
-		p1.setFirstName("pinco");
-		p1.setLastName("pallino");
-		//p1.setId(1L);
-		entityManager.persist(p1);
-
-		entityManager.getTransaction().commit();
-		entityManager.clear();
-
-		//Person foundPerson = entityManager.find(Person.class, 1L);
-		//System.out.println(foundPerson.getId());
+			entityManager.getTransaction().commit();
+			entityManager.clear();
+		} catch (Exception e) {
+			entityManager.getTransaction().rollback();
+		}
+		// Person foundPerson = entityManager.find(Person.class, 1L);
+		// System.out.println(foundPerson.getId());
 
 		entityManager.close();
 	}
