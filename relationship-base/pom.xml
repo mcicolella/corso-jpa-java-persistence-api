@@ -6,7 +6,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>net.emmecilab</groupId>
-	<artifactId>jpa-examples</artifactId>
+	<artifactId>relationship-base</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>jpa-examples</name>
 

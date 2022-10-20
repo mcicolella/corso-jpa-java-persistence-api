@@ -1,19 +1,27 @@
-package net.emmecilab.jpa_examples.model;
+package net.emmecilab.jpa_relationship_base.model;
+
+import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
 
 @Entity
-public class Person {
+//@Table(name = "AUTHORS")
+public class Author {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String firstName;
 	private String lastName;
+	
+	@OneToMany
+	List<Book> books;
 
-	public Person() {
+	public Author() {
 	}
 
 	public Long getId() {

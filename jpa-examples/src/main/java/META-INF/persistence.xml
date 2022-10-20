@@ -27,8 +27,6 @@
 	<persistence-unit name="jpa-mysql"
 		transaction-type="RESOURCE_LOCAL">
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
-		<class>net.emmecilab.jpa_examples.entity.Person</class>
-
 		<properties>
 			<property name="javax.persistence.jdbc.driver"
 				value="com.mysql.jdbc.Driver" />

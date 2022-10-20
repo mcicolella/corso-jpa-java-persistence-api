@@ -1,10 +1,10 @@
-package net.emmecilab.jpa_examples;
+package net.emmecilab.jpa_relationship_base;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-import net.emmecilab.jpa_examples.model.Person;
+import net.emmecilab.jpa_relationship_base.model.Author;
 
 public class App {
 	public static void main(String[] args) {
@@ -14,10 +14,9 @@ public class App {
 		try {
 			entityManager.getTransaction().begin();
 
-			Person p1 = new Person();
-			p1.setFirstName("pinco");
-			p1.setLastName("pallino");
-			// p1.setId(1L);
+			Author p1 = new Author();
+			p1.setFirstName("Dante");
+			p1.setLastName("Alighieri");
 			entityManager.persist(p1);
 
 			entityManager.getTransaction().commit();
