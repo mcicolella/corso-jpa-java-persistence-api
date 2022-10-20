@@ -9,4 +9,7 @@
 
 ## Video
 
-- [Corso di JPA Java Persistence API: introduzione](https://youtu.be/B8CTgrHv_7A)
+- [Corso di JPA Java Persistence API #1: introduzione](https://youtu.be/B8CTgrHv_7A)
+- [Corso di Java JPA Java Persistence API #:2 Entità e transizioni di stato](https://youtu.be/X4bAl-eIUNI)
+- [Corso di JPA Java Persistence API #3: annotazioni di base](https://youtu.be/ZQa4MGDpYKk)
+- [Corso di JPA Java Persistence API #:4 introduzione alle associazioni tra entità](https://youtu.be/NEgdtk65PJ8)
