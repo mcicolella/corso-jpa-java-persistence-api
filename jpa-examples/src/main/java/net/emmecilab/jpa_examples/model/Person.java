@@ -4,11 +4,17 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
 
 @Entity
 public class Person {
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue
+	//@GeneratedValue(strategy = GenerationType.IDENTITY)
+	//@GeneratedValue(strategy = GenerationType.SEQUENCE)
+	//@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "person_generator")
+	//@SequenceGenerator(name="person_generator", sequenceName = "person_seq", allocationSize=50)
+	//@GeneratedValue(strategy = GenerationType.TABLE)
 	private Long id;
 	private String firstName;
 	private String lastName;
