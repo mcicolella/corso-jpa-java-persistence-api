@@ -9,7 +9,7 @@ import net.emmecilab.jpa_examples.model.Person;
 public class App {
 	public static void main(String[] args) {
 
-		EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("jpa-postgres");
+		EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("jpa-mysql");
 		EntityManager entityManager = entityManagerFactory.createEntityManager();
 		try {
 			entityManager.getTransaction().begin();
