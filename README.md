@@ -14,3 +14,4 @@
 - [Corso di JPA Java Persistence API #3: annotazioni di base](https://youtu.be/ZQa4MGDpYKk)
 - [Corso di JPA Java Persistence API #:4 introduzione alle associazioni tra entità](https://youtu.be/NEgdtk65PJ8)
 - [Corso di JPA Java Persistence API: Persistence Unit](https://youtu.be/B6ThpzuJFBY)
+- [Corso di JPA Java Persistence API: generazione degli identificatori (AUTO, IDENTITY strategy)](https://youtu.be/WEoDihYDkDk)
