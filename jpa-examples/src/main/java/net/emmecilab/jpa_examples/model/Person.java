@@ -10,12 +10,12 @@ import javax.persistence.TableGenerator;
 @Entity
 public class Person {
 	@Id
-	//@GeneratedValue
+	@GeneratedValue
 	//@GeneratedValue(strategy = GenerationType.IDENTITY)
 	//@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	//@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "person_generator")
 	//@SequenceGenerator(name="person_generator", sequenceName = "person_seq", allocationSize=50)
-	@GeneratedValue(strategy = GenerationType.TABLE)
+	//@GeneratedValue(strategy = GenerationType.TABLE)
 	//@GeneratedValue(strategy = GenerationType.TABLE, generator = "table-generator")
 	//@TableGenerator(name = "table-generator", table = "dep_ids",
 		//pkColumnName = "seq_id", valueColumnName = "seq_value", allocationSize = 10)
